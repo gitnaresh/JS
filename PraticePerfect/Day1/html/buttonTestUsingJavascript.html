@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Button Test Using JavaScript -->
+<html>
+<head>
+	<link rel="stylesheet" type="style.css" href="">
+	<title> Java Script Practice</title>
+</head>
+<body>
+	<br><br>
+	<button id="firstButton" mytable="click button">Change Display</button><br><br>
+	<div id="firstBtnInfo">Click button to get image</div><br>
+	<button id="secondButton" mytable="click button">Append Text</button>
+	<div id="secondBtnInfo">Practice makes you </div><br>
+	<button id="thirdButton" mytable="click button">Menu List</button>
+	<div id="thirdBtnInfo"> </div><br>
+
+	<script type="text/javascript">
+	document.getElementById("firstButton").onclick=function(){
+		document.getElementById("firstBtnInfo").innerHTML="New Image Displayed";
+	}
+	document.getElementById("secondButton").onclick=function(){
+		document.getElementById("secondBtnInfo").innerHTML=document.getElementById("secondBtnInfo").innerHTML + "PERFECT!";
+	}
+	document.getElementById("thirdButton").onclick=function(){
+		document.getElementById("thirdBtnInfo").innerHTML="<ul><li>Idly</li><li>Dosa</li>";
+	}
+
+
+/*<p id="myButton"> javaScript Page! </p> -->
+alert("HI!");
+alert("Welcome to My Page"); == syntax : alert 
+alert(document.getElementById("text").innerHTML)="some more text"; == syntax : using getElementById
+document.getElementById("text").innerHTML="some more text"; == syntax : display a connect using js anywhere on doc
+==========================================
+<button id="textChange">Full Name</button><br><br>
+<div id="displayInfo">Nash</div>	
+	document.getElementById("textChange").onclick=function(){
+	document.getElementById("displayInfo").innerHTML="Nash Rampy"
+==========================================
+*/
+		
+	</script>
+</body>
+</html>
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div><br><br>
+		<!-- <input id="enterVal" value="Default Text"> </input><br><br>
+		<div id="enterDiv"> Default information</div><br><br></div>
+		 -->
+		<input id ="enterV" type="text" value="Enter Text"></input>
+		<button id="clickBtn">Click Me</button><br><br>
+		<div id="enterDivi"> After click information will be changed</div>
+	</div>
+	<script type="text/javascript">
+		var nameText = document.getElementById("enterV").value;
+		
+		document.getElementById("clickBtn").onclick=function(){
+			nameText = document.getElementById("enterV").value;
+			document.getElementById("enterDivi").innerHTML="nameText";
+		}
+
+
+		// var a = document.getElementById("enterVal").value;
+		
+		// document.getElementById("ssup").yo=function(){
+		// 	a = document.getElementById("enterVal").value;
+		// 	document.getElementById("enterDiv").innerHTML="a";
+	</script>
+</body>
+</html>

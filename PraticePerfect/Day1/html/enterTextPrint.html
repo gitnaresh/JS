@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div>
+		<label> Enter details</label><br><br><input id="enterInput" type="text" value="Type.."></input><br><br>
+		<button id="clickChange"> Click to print</button><br><br>
+		<div id="enterText">Output</div>
+	</div>
+	<script type="text/javascript">
+		var newText=document.getElementById("enterInput").value;
+		
+		document.getElementById("clickChange").onclick=function(){
+			newText=document.getElementById("enterInput").value;
+			document.getElementById("enterText").innerHTML=newText;
+		}
+	</script>
+</body>
+</html>
+
+
